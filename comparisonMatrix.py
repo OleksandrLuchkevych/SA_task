@@ -68,10 +68,6 @@ alternatives_matrix = np.array([
 # Множення матриць критеріїв та альтернатив
 result_matrix = matrix_multiplication(criteria_matrix, alternatives_matrix)
 
-# Виведення результату множення матриць
-print("Результат множення матриць:")
-print(result_matrix)
-
 # Критерії для стоматологічної клініки
 criteria = ["Доступ до даних", "Зручність інтерфейсу", "Інтеграція з програмами", "Адекватність функціоналу"]
 
@@ -101,3 +97,7 @@ eigenvector = comparison_matrix.calculate_principal_eigenvalue_and_vector()
 print("\nВласний вектор, що відповідає λmax:")
 for i, value in enumerate(eigenvector):
     print(f"{criteria[i]}: {value:.3f}")
+
+# Виведення результату множення матриць
+print("Результат множення матриць:")
+print(result_matrix)
